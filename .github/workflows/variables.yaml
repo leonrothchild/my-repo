@@ -4,5 +4,5 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ var.USERNAME }}"
+      - run: echo "${{ vars.USERNAME }}"
 
