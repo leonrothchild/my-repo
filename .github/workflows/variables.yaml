@@ -3,6 +3,7 @@ on: push
 jobs:
   print:
     runs-on: ubuntu-latest
-    USERNAME: ${{ vars.USERNAME }}
+    env:
+      USERNAME: ${{ vars.USERNAME }}
     steps:
       - run: echo "${USERNAME}"
