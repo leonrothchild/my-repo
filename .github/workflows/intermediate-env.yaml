@@ -1,0 +1,9 @@
+name: Intermediate envrironment variables
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-lates
+    env:
+      ACTOR: ${{ github.actor }}
+    steps:
+      - run: echo "${ACTOR}"
